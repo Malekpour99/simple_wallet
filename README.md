@@ -14,6 +14,7 @@ Simple project which enable adding new users and updating their wallet balance
 
 ### Running migrations
 \$ ```python manage.py makemigrations```
+
 \$ ```python manage.py migrate```
 
 ### Running development server

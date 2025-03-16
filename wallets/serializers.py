@@ -1,3 +1,5 @@
+from decimal import Decimal
+
 from django.db import transaction
 from rest_framework import serializers
 
@@ -11,7 +13,7 @@ class WalletSerializer(serializers.Serializer):
         write_only=True,
     )
     amount = serializers.DecimalField(
-        min_value=1,
+        min_value=Decimal("0.00001"),
         max_digits=16,
         decimal_places=8,
         write_only=True,
